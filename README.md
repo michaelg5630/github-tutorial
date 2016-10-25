@@ -24,7 +24,7 @@ You do not need Github in order to use Git. When we initize git, we can edit fil
 8. Then, you go to c9.io
 9. click the gear icon
 10. Press connected services
-11. Connect to your Github
+11. Connect to your Github  
 
 In order to make an SSH key,
 1. On the top right corner on Github, click on your profile icon and then on settings
@@ -36,7 +36,7 @@ In order to make an SSH key,
 7. Add the SSH key 
 8. On cloud9, open github-learning IDE
 9. ssh -T git@github.com
-10. It is going to give you a message that you authenticated but Gitbug does not provide shell access
+10. It is going to give you a message that you authenticated but Gitbug does not provide shell access  
 
 ---
 ## Repository Setup
@@ -45,14 +45,16 @@ In order to make your first repo,
 2. Mkdir my-repo; this will make a directory where you can put in things like files
 3. Cd my-repo; this will put you inside the directory and it will allow you to make files
 4. Git init; This will initialize the directory turning it into a repository which is the local repository. 
-   You are then able to push it to a remote repository to save and so others can see what you commited and done on Github.
+   You are then able to push it to a remote repository to save and so others can see what you commited and done on Github.  
+
 In order to add files into the repository,
 1. Touch my-file.txt which will make a text file called "my-file".
 2. Open the file and type whatever you want
 3. Make sure the file is saved
 4. Git add my-file.txt which will add the file to the staging area. This is where we can add and make changes to the files
 5. Make sure to type git status to see if your text in the file is ready to be commited.
-6. git commit -m "make a file" will take whatever is in the staging area and it will add to the remote repository on Github. The message should be short and simple, it should get straight to the point.
+6. git commit -m "make a file" will take whatever is in the staging area and it will add to the remote repository on Github. The message should be short and simple, it should get straight to the point.  
+
 In order to make a remote repository, 
 1. Go to Github
 2. Click on the "+"
