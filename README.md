@@ -66,3 +66,8 @@ In order to make a remote repository,
 
 ---
 ## Workflow & Commands
+* Git status: It is an optional command that shows which files have been edited since the last commit (They will be red)
+* Git sdd: Adds files to the stage so it can be commited 
+   * Git add. : Adds the current or entire file(s) to the stage
+   * Git add --all : Includes all changes including deleted files
+* Git push: Sends the local repository commits to the remote repository or up to the cloud
