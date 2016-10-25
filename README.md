@@ -69,7 +69,7 @@ You do not need Github in order to use Git. When we initize git, we can edit fil
 ---
 ## Workflow & Commands
 * `_Git status_`: It is an optional command that shows which files have been edited since the last commit (They will be red) `git status`
-* `_Git add_`: Adds files to the stage so it can be commited `git add`
+* `_Git add_`: Adds files to the stage so it can be commited `git add`  
    *` _Git add._` : Adds the current or entire file(s) to the stage `git add.`
    * `_Git add --all_` : Includes all changes including deleted files `git add --all`
-* `_Git push_`: Sends the local repository commits to the remote repository or up to the cloud `git push
+* `_Git push_`: Sends the local repository commits to the remote repository or up to the cloud `git push`
