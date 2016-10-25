@@ -26,6 +26,17 @@ You do not need Github in order to use Git. When we initize git, we can edit fil
 10. Press connected services
 11. Connect to your Github
 
+In order to make an SSH key,
+1. On the top right corner on Github, click on your profile icon and then on settings
+2. On the left sidebar, click SSH and GPG keys
+3. New SSH key
+4. Make the title cloud9
+5. On KEY, witch to the cloud9 tab, on the top right, press the gear icon
+6. Click on the SSH key tab and copy and paste your SSH key into Github 
+7. Add the SSH key 
+8. On cloud9, open github-learning IDE
+9. ssh -T git@github.com
+10. It is going to give you a message that you authenticated but Gitbug does not provide shell access
 
 ---
 ## Repository Setup
