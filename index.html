@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Github Tutorial by michaelg5630</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Github Tutorial</h1>
+        <p>Tell me I don&#39;t GIT</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/michaelg5630/github-tutorial" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/michaelg5630/github-tutorial/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/michaelg5630/github-tutorial/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Michael Gierlach</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Git is the basic workflow that runs in the command line. It keeps a snapshot of your code. 
+You do not need Github in order to use Git. When we initize git, we can edit files, add them and commit them.
+  Github is a website stores your code and tracks all your changes. It also collaborates with other files. You need git in order to use Github. </p>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h4>
+<a id="in-order-to-make-a-github-account" class="anchor" href="#in-order-to-make-a-github-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to make a Github account,</h4>
+
+<ol>
+<li>Click sign up </li>
+<li>Make a username (the same as your HSTAT username)</li>
+<li>Make a password (the same as your HSTAT password)</li>
+<li>If theres a bubble saying something went wrong, <strong>ignore it and keep going</strong>
+</li>
+<li>Make a <em>free</em> account</li>
+<li>Then press finish the sign up</li>
+<li>Then, you go to c9.io</li>
+<li>click the gear icon</li>
+<li>Press connected services</li>
+<li>Connect to your Github<br>
+</li>
+</ol>
+
+<h4>
+<a id="in-order-to-make-an-ssh-key" class="anchor" href="#in-order-to-make-an-ssh-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to make an SSH key</h4>
+
+<ol>
+<li>On the top right corner on Github, click on your profile icon and then on settings</li>
+<li>On the left sidebar, click SSH and GPG keys</li>
+<li>New SSH key</li>
+<li>Make the title cloud9</li>
+<li>On KEY, witch to the cloud9 tab, on the top right, press the gear icon</li>
+<li>Click on the SSH key tab and copy and paste your SSH key into Github </li>
+<li>Add the SSH key </li>
+<li>On cloud9, open github-learning IDE</li>
+<li>ssh -T <a href="mailto:git@github.com">git@github.com</a>
+</li>
+<li>It is going to give you a message that you authenticated but Gitbug does not provide shell access<br>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h4>
+<a id="in-order-to-make-your-first-repo" class="anchor" href="#in-order-to-make-your-first-repo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to make your first repo</h4>
+
+<ol>
+<li>
+<code>Make cd ~/ workspace</code> which will take you into a directory</li>
+<li>
+<code>Mkdir my-repo</code>; this will make a directory where you can put in things like files</li>
+<li>
+<code>Cd my-repo</code>; this will put you inside the directory and it will allow you to make files</li>
+<li>
+<code>Git init</code>; This will initialize the directory turning it into a repository which is the local repository. 
+You are then able to push it to a remote repository to save and so others can see what you commited and done on Github.<br>
+</li>
+</ol>
+
+<h4>
+<a id="in-order-to-add-files-into-the-repository" class="anchor" href="#in-order-to-add-files-into-the-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to add files into the repository</h4>
+
+<ol>
+<li>Touch my-file.txt which will make a text file called "my-file".</li>
+<li>Open the file and type whatever you want</li>
+<li>Make sure the file is saved</li>
+<li>Git add my-file.txt which will add the file to the staging area. This is where we can add and make changes to the files</li>
+<li>Make sure to type git status to see if your text in the file is ready to be commited.</li>
+<li>git commit -m "make a file" will take whatever is in the staging area and it will add to the remote repository on Github. The message should be short and simple, it should get straight to the point.<br>
+</li>
+</ol>
+
+<h4>
+<a id="in-order-to-make-a-remote-repository" class="anchor" href="#in-order-to-make-a-remote-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to make a remote repository</h4>
+
+<ol>
+<li>Go to Github</li>
+<li>Click on the "+"</li>
+<li>Click on new repository</li>
+<li>Type in your local repository name. <strong>THE NAMES SHOULD ALWAYS MATCH</strong>.</li>
+<li>Press create repository</li>
+<li>If you are asked to vertify your email then do it, if not don't worry about it</li>
+<li>Click SSH on the top and copy and paste each line of code one at a time</li>
+<li>Lastly, go back to Github and open the repository and you should see the changes on your website.</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>
+<code>_Git status_</code>: It is an optional command that shows which files have been edited since the last commit (They will be red). <code>git status</code>
+</li>
+<li>
+<code>_Git add_</code>: Adds files to the stage so it can be commited. <code>git add &lt;file name&gt;</code><br>
+
+<ul>
+<li>
+<code>_Git add._</code> : Adds the current or entire file(s) to the stage. <code>git add. &lt;file name&gt;</code>
+</li>
+<li>
+<code>_Git add --all_</code> : Includes all changes including deleted files. <code>git add --all &lt;file name&gt;</code>
+</li>
+</ul>
+</li>
+<li>
+<code>_Git push_</code>: Sends the local repository commits to the remote repository or up to the cloud. <code>git push</code>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/michaelg5630">michaelg5630</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
